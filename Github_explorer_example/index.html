@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Explorer</title>
+    <!-- Tailwind Css CDN d -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="containerBox w-full h-screen bg-gray-800 ">
+         <!-- Navbar -->
+        <div class="nav w-full h-40 bg-gray-500 flex justify-between  items-center">
+            <!-- partOne -->
+            <div class="partOne flex flex-row gap-4 items-center justify-center mx-10">
+                <img class="w-20 h-20 rounded-full" src="https://avatars1.githubusercontent.com/u/9919?v=4" alt="GitHub Logo">
+                <h1 class="text-4xl font-semibold text-zinc-200">GitHub Profile Explorer</h1>
+            </div>
+            <!-- partTwo -->
+            <div class="partTwo flex flex-row gap-4 mx-10">
+                <input type="text"  name="UserName" value="" id="input" class=" w-md bg-gray-900 px-3 py-2 rounded-lg text-zinc-200" placeholder="Enter Your UserName...">
+                <button type="submit" class="btn px-3 py-3 cursor-pointer rounded-lg bg-blue-600 text-zinc-200 font-semibold hover:scale-105 hover:bg-blue-700">Search</button>
+            </div>
+        </div>
+        <!-- heading -->
+        <div class="heading w-full h-20 flex justify-center  items-center mx-auto">
+            <h1 class="text-2xl font-semibold text-red-500">Important Note : This is only for learning purpose.</h1>
+        </div>
+        <!-- content -->
+        <div class="content w-full py-5  bg-gray-700 flex flex-col items-center justify-center"> 
+            <!-- Profile interface -->
+            <div class="card  px-10 py-5 w-1/2  bg-gray-800 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                <img class="avatar w-32 h-32 rounded-full" src="https://avatars1.githubusercontent.com/u/9919?v=4" alt="GitHub Logo">
+                <h2 class="name text-2xl font-semibold text-zinc-200">User Name</h2>
+                <p class="bio text-zinc-400">Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button type="submit" class="px-3 py-2 rounded-lg bg-blue-600 text-zinc-200 font-semibold m-5 hover:scale-105 hover:bg-blue-700 "><a id="Profile_View" href="#">View Profile Page</a></button>
+            </div>
+            <!-- Repo interface -->
+            <div class="repos w-1/2 px-5 py-10 bg-gray-800 rounded-lg shadow-lg mt-5 flex flex-row gap-10 items-center justify-center">
+                <div class="follower__ flex flex-col gap-2 justify-center items-center">
+                    <p class=" text-xl font-semibold text-zinc-300">Followers </p>
+                    <div class="followers text-xl text-zinc-300 font-semibold"> 100</div>
+                </div>
+                <div class="following__ flex flex-col gap-2 justify-center items-center">
+                    <p class="text-xl font-semibold text-zinc-300">Following </p>
+                    <div class="following text-xl text-zinc-300 font-semibold">50</div>
+                </div>
+                <div class="repo__ flex flex-col gap-2 justify-center items-center">
+                    <h3 class="text-xl font-semibold text-zinc-300">Repositories</h3>
+                    <div class="public_repos text-xl text-zinc-300 font-semibold">0</div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer w-full h-20 bg-gray-500 flex items-center justify-center">
+          <p class="text-zinc-200">© 2023 GitHub Explorer</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
