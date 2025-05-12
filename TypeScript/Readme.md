@@ -133,6 +133,73 @@ let class_student : student = {
 }
 
 
+<!-- Optional keyword (?) in object -->
+interface person{
+    name : string,
+    age : number,
+    salary ? : number,
+}
+
+<!-- here salary is optional chahe hum salary ko mention kare ya na kare iske object ka interface banakar type interface declare kar diya hu isme optional ko declare karne ke liye question mark (?) ka use karte hai  -->
+
+let employee1 = {
+    name : "Neeraj Gupta",
+    age : "18",
+    salary : 660000,
+}
+let employee2 = {
+    name : "Mohan",
+    age : 45,
+}
+
+<!-- Utility Types for objects -->
+1: Partial <Person>
+2: Required <Person>
+3: Readonly <Person>
+
+
+<!-- Array of Object -->
+
+<!-- Functions in TypeScript -->
+function printName : (name : string) : string {
+    return ( ` hello, ${name} !`)
+}
+
+<!-- Extend keyword -->
+
+<!-- default parameter -->
+
+<!-- optional parameter  -->
+
+<!-- Arrow function Multiply -->
+
+<!-- Rest parameter  -->
+
+<!-- Callback function -->
+
+
+<!-- classes  -->
+<!-- Access specifier -->
+<!-- public private protected -->
+
+<!-- Public :- Default; accessible everywhere
+-->
+<!-- Private :- access within the class -->
+<!-- Protected :- accessible within the class and subclasses. -->
+
+
+<!-- Inharitance :- one class features access all the features in another classes. -->
+
+
+<!-- super keyword is used to call the constructor of parent class -->
+
+<!-- super.method() is used to call the parent class method also from child class-->
+
+<!-- Generics -->
+Generics in TypeScript allow you to create flexible reusable components by enabling you to specific types as parameter in functions classes interfaces and other constructs. This helps provide type saftey while keeping the flexibilty to work with various data types.
+
+
+
 
 
 
